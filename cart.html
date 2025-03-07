@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title> <style>
+
+        body{
+           background-color:  rgb(14, 137, 186);
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <h1>Shopping Cart</h1>
+    </header>
+    
+    <section class="cart">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+            <tr>
+                <td>samsung galaxy</td>
+                <td><input type="number" value="1" min="1"></td>
+                <td>Rs. 42450</td>
+                <td>Rs. 42450</td>
+                <td><button class="remove">X</button></td>
+            </tr>
+            <tr>
+                <td>Mi HeadPhone</td>
+                <td><input type="number" value="2" min="1"></td>
+                <td>Rs. 1200</td>
+                <td>Rs. 2400</td>
+                <td><button class="remove">X</button></td>
+            </tr>
+        </table>
+        
+        <div class="cart-summary">
+            <p><strong>Subtotal:</strong> Rs. 44850</p>
+            <button class="checkout">Proceed to Checkout</button>
+        </div>
+    </section>
+</body>
+</html>

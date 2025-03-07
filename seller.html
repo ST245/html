@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Seller Account</title>
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+           
+            background-image:url("sells");
+            background-size: repeat;
+           
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            border:3px solid rgb(14, 137, 186);
+        }
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: white;
+            color: rgb(14, 137, 186);
+            border: none;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+        button:hover {
+            background-color: rgb(14, 137, 186);
+            color: white;
+        }
+        .logo{
+    background-image: url("nlogo.png");
+    height: 36px;
+    width: 100px;
+    background-size: cover;
+    margin-left: 1rem;
+    margin-top: 1.5rem;
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+         
+        <div class="sell" style="display: flex;">
+        <h1 style="margin-left: 7rem;">welcome To</h1> 
+        <div class="logo">
+        </div> 
+        </div>
+        <h2>Join with Us As Seller </h2>
+        <form style="margin-right: 1.5rem;">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="password" placeholder="Store Name" required>
+            <input type="text" name="store_name" placeholder="Products Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="add" name="add" placeholder="Address" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

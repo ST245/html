@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+ <style>
+
+    body{
+       background-color:  rgb(14, 137, 186);
+    }
+ </style>
+</head>
+<body>
+    <header>
+        <h1>Order Summary</h1>
+    </header>
+    
+    <section class="order-details">
+        <h2>Your Items</h2>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>samsung galaxy</td>
+                <td>1</td>
+                <td>Rs. 42450</td>
+            </tr>
+            <tr>
+                <td>Mi HeadPhone</td>
+                <td>2</td>
+                <td>Rs. 1200</td>
+            </tr>
+        </table>
+        <p><strong>Total: $150.00</strong></p>
+    </section>
+    
+    <section class="billing-shipping">
+        <h2>Billing & Shipping Details</h2>
+        <form>
+            <label for="name">Name:</label>
+            <p>Sumit Thakre</p>
+            
+            <label for="address">Address:</label>
+          <p> Hadukeshwar , Nagpur-40009</p>
+            
+            <label for="email">Email:</label>
+           <p>sumitthakre245@gmail.com</p>
+        </form>
+    </section>
+    
+    <section class="payment">
+        <h2>Payment Method</h2>
+        <form>
+            <label>
+                <input type="radio" name="payment" value="CAsh On Delivery" checked>
+                Cash On Delivery
+            </label>
+            <label>
+                <input type="radio" name="payment" value="UPI">
+               UPI
+            </label>
+        </form>
+    </section>
+    
+    <button type="submit">Place Order</button>
+</body>
+</html>

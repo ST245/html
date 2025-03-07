@@ -1,0 +1,610 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   border: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+
+.navbar{
+    height: 70px;
+    color: white;
+    background-color:rgb(3, 55, 76) ;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.navlogo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+    background-image: url("nlogo.png");
+    height: 36px;
+    width: 100%;
+    background-size: cover;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid rgb(14, 137, 186);
+    text-decoration: none;
+
+}
+
+/** box 2 **/
+
+.navSearch{
+display: flex;
+justify-content:space-between ;
+background-color: rgb(14, 137, 186);
+width: 620px;
+height: 40px;
+border-radius: 5px;
+
+}
+.navSearch:hover{
+    border: 2px solid rgb(5, 88, 220);
+}
+.searchBar{
+
+    width: 95%;
+    font-size: 1rem;
+    border-top-left-radius: 5px; 
+    border-bottom-left-radius: 5px; 
+    border: none;
+
+}
+
+.searchIcon{
+    width:45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(6, 111, 216, 0.846);
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+
+}
+
+/**  hover effect **/
+.st:hover{
+    color: rgba(231, 105, 8, 0.846);
+    size: 3rem;
+}
+.ts:hover{
+    color: white;
+    background-color: rgba(3, 128, 174, 0.846);
+    
+
+    
+}
+a{
+    color: rgb(247, 251, 253) ;
+    text-decoration: none;
+}
+a:hover{
+    
+    color:rgb(11, 10, 10);
+    display: block;
+    
+}
+/** box 3 **/
+.navLog{
+    display: flex;
+    width:30px;
+    align-items: center;
+}
+.logBar{
+    margin:0.7rem;
+}
+.logFirst{
+    font-size:0.85rem ;
+    font-weight: 700;
+    margin:0.3rem;
+}
+.logSecond{
+  font-size: 0.7rem; 
+  color: rgba(6, 111, 216, 0.846); 
+}
+/** box 3**/
+.orderFirst{
+    font-size:0.8rem ;
+    font-weight: 700;
+    margin:0.2rem;
+}
+.orderSecond{
+  font-size: 0.7rem; 
+  
+}
+.navCart{
+    font-weight: 700;
+}
+
+/** row 2 box1**/
+
+.panel{
+    height: 40px;
+    background-color: rgb(14, 137, 186);
+    color: white;
+    display:flex;
+  align-items:center;
+  justify-content: space-evenly;
+ 
+ box-sizing: border-box;
+ 
+  bottom: 100px;
+}
+.panelAll{
+    margin-right:4rem;
+    background-color:rgb(14, 137, 186);
+    
+    height:30px;
+    width:120px;
+   
+    position: relative;
+    color: white;
+    text-align: center;
+    line-height:30px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+.panelAll:hover .ones{
+    display: block;
+    
+}
+.ones{
+    height: auto;
+    width: 150px;
+    background-color:rgb(14, 137, 186) ;
+    display: none;
+    
+    
+}
+.dropdown ,a{
+    display: block;
+    text-align: left;
+    padding-left:2px;
+   color: white;
+   font-size: 15px;
+}
+.panelOption a{
+    display: inline;
+    justify-content: space-evenly;
+}
+p{
+    margin-right:7.5rem;
+}
+
+/** hero sec**/
+
+.heroSection{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 450px;
+    width: 100%;
+background-color: aqua;
+background-image: url("slide1.jpg");
+background-position: center center;
+background-repeat: no-repeat;
+background-size: 100% 100% ;
+
+animation: myani;
+animation-duration:20s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+@keyframes myani{
+    0%{background-image: url("slide1.jpg");}
+    30%{background-image: url("slide2.jpg");}
+    60%{background-image: url("slide3.jpg");}
+    90%{background-image: url("slide4.jpg");}
+}
+
+.icon{
+height:150px;
+background-color: white;
+justify-content: space-evenly;
+
+}
+
+u{
+    display: flex;
+    justify-content:center;
+    text-decoration: none;
+    font-size:20px;
+    font-weight: 700;
+    padding-right:3rem;
+}
+
+
+
+.devil{
+    
+    
+    justify-content:center;
+    text-decoration: none;
+    font-size:15px;
+    
+   
+}
+/** shopSection **/
+.shopSection{
+    margin-top:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:white;
+    margin-top: 8rem;
+  
+}
+.box{
+    height:200px;
+    color: rgb(1, 7, 12);
+    
+    
+    width:26%;
+    padding: 20px 0px 15px;
+    padding-bottom: 3rem;
+    
+  
+}
+
+.boxImg{
+    height: 180px;
+    background-size: cover;
+    background-repeat:no-repeat ;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    transition:transform 2s;
+}
+.box:hover .boxImg{
+    transform:scale(1.1);
+    
+    }
+.boxContent{
+    margin-left: 13px;
+    margin-right:13px;
+}
+.boxContent p{
+    color: rgb(11, 76, 145);
+}
+
+/** Top Brand **/
+
+.slider {
+    position: relative;
+    width: 260px;
+    margin-left: 6rem;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height:320px;
+}
+.slides {
+    display: flex;
+    width: 100%;
+    animation: slide 15s infinite;
+}
+.slide {
+    width: 100%;
+    flex: 0 0 auto;
+}
+.slide img {
+    width: 100%;
+    display: block;
+    background-size: cover;
+    height: 90%;
+}
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+.Top Brand ,h3{
+    margin-left: 5.5rem; 
+}
+.dis{
+border:1px solid ;
+width: 85px;
+
+border-radius:5px; 
+color: rgb(14, 137, 186);
+}
+.dis:hover{
+color: white;
+background:rgb(14, 137, 186);
+}
+
+
+
+
+/** Brand **/
+.Brand{
+   background-color: rgb(255, 255, 254);
+    height: 160px;
+    margin-bottom:3rem;
+    
+
+}
+.logos{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.logos:hover .la{
+    transform:scale(1.4);
+  
+}
+.logos:hover .lb{
+        transform:scale(1.4);
+      
+ }    
+.logos:hover .lc{
+            transform:scale(1.4);
+          
+}
+.logos:hover .ld{
+    transform:scale(1.4);
+  
+}
+.logos:hover .le{
+    transform:scale(1.4);
+  
+}
+.logos:hover .lf{
+    transform:scale(1.4);
+  
+}
+.logos:hover .lg{
+    transform:scale(1.4);
+  
+}
+.logos:hover .lh{
+    transform:scale(1.4);
+  
+}
+.logos:hover .li{
+    transform:scale(1.4);
+  
+}
+/**  deal **/
+.bestDeal{
+    height:280px;
+    background-color: white;
+    
+    justify-content:space-around;
+    margin-bottom:8rem;
+}
+.line1{
+    height:0.2px;
+    border:0.1px solid rgb(13, 108, 149);
+    width:390px;
+    margin-left:2rem;
+}
+.line2{
+    height:0.2px;
+    border:0.1px solid rgb(171, 178, 180);
+    width:1280px;
+    margin-left:2rem;
+    margin-bottom: 1rem;
+    
+}
+.boxa{
+    height:170px;
+  
+    color: rgb(1, 7, 12);
+    background-color: aliceblue;
+    
+    width:16%;
+    padding: 20px 0px 15px;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+    margin-right: 2.1rem;
+}
+.boxa:hover{
+    height: 215px;
+}
+.boxImga{
+    height: 140px;
+    background-size:contain;
+    background-repeat:no-repeat ;
+    margin-left:2rem;
+    margin-bottom: 1rem;
+    transition:transform 2s;
+}
+.one{
+    text-align: center;
+    display: none;
+   height:30px;
+   border:2px solid rgb(13, 108, 149) ;
+    
+    border-radius: 6%;
+    width: 80px;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
+.boxa:hover .boxImga {
+    transform:scale(1.4);
+    transition:transform 2s;
+    
+    }
+    .boxa:hover .one {
+        display: block;
+    
+        
+
+    }
+    .one:hover{
+        color: white;
+        background-color: rgb(13, 108, 149);
+    }
+.boxContenta{
+    margin-left: 13px;
+    margin-right:13px;
+}
+.boxContenta p{
+    color: rgb(11, 76, 145);
+    margin-left: 4rem;
+}
+
+/** categaries **/
+.Top Categories{
+    height:280px;
+    
+    
+    justify-content:space-around;
+    margin-bottom: 10rem;
+    margin-top: 12rem;
+}
+.line1{
+    height:0.2px;
+    border:0.1px solid rgb(13, 108, 149);
+    width:390px;
+    margin-left:2rem;
+}
+.line2{
+    height:0.2px;
+    border:0.1px solid rgb(171, 178, 180);
+    width:1280px;
+    margin-left:2rem;
+    margin-bottom: 1rem;
+    
+}
+.boxb{
+    height:120px;
+  
+    color: rgb(1, 7, 12);
+    background-color: aliceblue;
+    
+    width:16%;
+    padding: 20px 0px 15px;
+    padding-bottom: 3rem;
+    border-radius:50%;
+    margin-right: 2.1rem;
+}
+.boxImgb{
+    height: 120px;
+    background-size:contain;
+    background-repeat:no-repeat ;
+    margin-left:2rem;
+    margin-bottom: 1rem;
+    transition:transform 2s;
+}
+.boxb:hover .boxImgb{
+    transform:scale(1.2);
+  
+    }
+
+.boxContentb{
+    margin-left: 13px;
+    margin-right:13px;
+}
+
+
+/**  Featured Products**/
+.Featured Products{
+    height:280px;
+    background-color: white;
+    
+    justify-content:space-around;
+    margin-bottom:8rem;
+}
+.line1{
+    height:0.2px;
+    border:0.1px solid rgb(13, 108, 149);
+    width:390px;
+    margin-left:2rem;
+}
+.line2{
+    height:0.2px;
+    border:0.1px solid rgb(171, 178, 180);
+    width:1280px;
+    margin-left:2rem;
+    margin-bottom: 1rem;
+    
+}
+.boxc{
+    height:160px;
+  
+    color: rgb(1, 7, 12);
+    background-color: aliceblue;
+    
+    width:16%;
+    padding: 20px 0px 15px;
+    padding-bottom: 3rem;
+    margin-bottom: 5rem;
+    margin-right: 2.1rem;
+}
+.boxc:hover{
+    height: 200px;
+}
+.boxImgc{
+    height: 140px;
+    background-size:contain;
+    background-repeat:no-repeat ;
+    margin-left:2rem;
+    margin-bottom: 1rem;
+    transition:transform 2s;
+}
+
+.boxc:hover .boxImgc{
+    transform:scale(1.4);
+    
+    }
+    .boxc:hover .one {
+        display: block;
+    
+        
+
+    }
+.boxContentc{
+    margin-left: 13px;
+    margin-right:13px;
+}
+.boxContentc p{
+    color: rgb(11, 76, 145);
+    margin-left: 4rem;
+}
+
+/** footer  **/
+footer{
+    margin-top: 15px;
+}
+.foot1{
+    padding-top: 2rem;
+    background-color:rgb(14, 137, 186);
+    color: hsl(0, 0%, 100%);
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+
+ul , a{
+    
+    display: block;
+}
+.footpanel3{
+    background-color:rgb(2, 44, 60);
+    color: white;
+   
+    height: 70px;
+    display: flex;
+    
+}
+.logoss{
+   background-image:url("nlogo.png");
+   background-size:cover;
+   height:50px;
+   width: 150px;
+   margin-left:24rem;
+   margin-top: 0.8rem;
+
+}
